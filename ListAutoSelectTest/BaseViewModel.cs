@@ -6,7 +6,7 @@ namespace ListAutoSelectTest
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public virtual void NotifyPropertyChanged(string propertyName)
+        public void NotifyPropertyChanged(string propertyName)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
             if (handler != null)

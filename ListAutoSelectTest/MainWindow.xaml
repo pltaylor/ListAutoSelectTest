@@ -8,10 +8,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <DataGrid SelectionUnit="FullRow" ItemsSource="{Binding Laps, Mode=TwoWay}" 
-                  SelectedItem="{Binding SelectedLap}" AlternatingRowBackground="Gainsboro" 
-              AutoGenerateColumns="False" CanUserDeleteRows="True" CanUserAddRows="False" CanUserSortColumns="False" RowHeaderWidth="0" FontSize="11" 
-                  HorizontalScrollBarVisibility="Disabled">
+        <DataGrid SelectionUnit="FullRow" ItemsSource="{Binding Laps, Mode=TwoWay}" SelectedItem="{Binding SelectedLap}" AutoGenerateColumns="False" CanUserAddRows="False">
             <DataGrid.Resources>
                 <DataTemplate x:Key="LaptimeCellTemplate">
                     <TextBox Text="{Binding Laptime, Mode=TwoWay, StringFormat=0.00, UpdateSourceTrigger=LostFocus}" Focusable="True" SelectedText=""/>
@@ -19,39 +16,24 @@
             </DataGrid.Resources>
             <DataGrid.Columns>
                 <DataGridTemplateColumn Header="Lap">
-                    <DataGridTemplateColumn.CellStyle>
-                        <Style TargetType="DataGridCell">
-                            <!--<Setter Property="Focusable" Value="False" />-->
-                        </Style>
-                    </DataGridTemplateColumn.CellStyle>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Label Content="{Binding LapNumber}" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="35" />
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTemplateColumn CellTemplate="{StaticResource LaptimeCellTemplate}"
-                                        MinWidth="30" Header="Lap Time" IsReadOnly="False">
+                <DataGridTemplateColumn CellTemplate="{StaticResource LaptimeCellTemplate}" MinWidth="30" Header="Lap Time" IsReadOnly="False">
                     <DataGridTemplateColumn.CellStyle>
                         <Style TargetType="DataGridCell">
-                            <Setter Property="Focusable" Value="True" />
-                            <Setter Property="FocusManager.IsFocusScope" Value="False" />
                             <Setter Property="listAutoSelectTest:TextBoxAttach.TextBoxController" Value="True"/>
                         </Style>
                     </DataGridTemplateColumn.CellStyle>
                 </DataGridTemplateColumn>
                 <DataGridTemplateColumn>
-                    <DataGridTemplateColumn.CellStyle>
-                        <Style TargetType="DataGridCell">
-                            <Setter Property="Focusable" Value="False" />
-                            <Setter Property="FocusManager.IsFocusScope" Value="False" />
-                        </Style>
-                    </DataGridTemplateColumn.CellStyle>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Button Content="X" Padding="0,-3,0,0" ToolTip="Delete Lap"
-                            Command="{Binding RelativeSource={RelativeSource AncestorType={x:Type DataGrid}},
-                                              Path=DataContext.DeleteCommand}"
+                            Command="{Binding RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}, Path=DataContext.DeleteCommand}"
                             CommandParameter="{Binding}" Focusable="False" />
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
