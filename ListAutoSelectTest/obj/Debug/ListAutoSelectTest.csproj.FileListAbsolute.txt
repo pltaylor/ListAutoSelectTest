@@ -1,0 +1,15 @@
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\bin\Debug\ListAutoSelectTest.exe.config
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\bin\Debug\ListAutoSelectTest.exe
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\bin\Debug\ListAutoSelectTest.pdb
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\ListAutoSelectTest.csprojResolveAssemblyReference.cache
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\MainWindow.g.cs
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\App.g.cs
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\ListAutoSelectTest_MarkupCompile.cache
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\ListAutoSelectTest_MarkupCompile.lref
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\MainWindow.baml
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\ListAutoSelectTest.g.resources
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\ListAutoSelectTest.Properties.Resources.resources
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\ListAutoSelectTest.csproj.GenerateResource.Cache
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\ListAutoSelectTest.exe
+c:\users\ptaylor\documents\visual studio 2013\Projects\ListAutoSelectTest\ListAutoSelectTest\obj\Debug\ListAutoSelectTest.pdb
