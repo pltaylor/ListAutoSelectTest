@@ -13,25 +13,9 @@
               AutoGenerateColumns="False" CanUserDeleteRows="True" CanUserAddRows="False" CanUserSortColumns="False" RowHeaderWidth="0" FontSize="11" 
                   HorizontalScrollBarVisibility="Disabled">
             <DataGrid.Resources>
-                <DataTemplate x:Key="InLapCellTemplate">
-                    <Grid>
-                        <TextBox Focusable="False" IsEnabled="False" />
-                        <TextBlock Text="IN" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    </Grid>
-                </DataTemplate>
-                <DataTemplate x:Key="OutLapCellTemplate">
-                    <Grid>
-                        <TextBox Focusable="False" IsReadOnly="True" IsEnabled="False" />
-                        <TextBlock Text="OUT" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False"/>
-                    </Grid>
-                </DataTemplate>
                 <DataTemplate x:Key="LaptimeCellTemplate">
                     <TextBox Text="{Binding Laptime, Mode=TwoWay, StringFormat=0.00, UpdateSourceTrigger=LostFocus}" Focusable="True" SelectedText=""/>
                 </DataTemplate>
-                <DataTemplate x:Key="FastestLaptimeCellTemplate">
-                    <TextBox Background="GreenYellow" Text="{Binding Laptime, Mode=TwoWay, StringFormat=0.00, UpdateSourceTrigger=LostFocus}" />
-                </DataTemplate>
-                
             </DataGrid.Resources>
             <DataGrid.Columns>
                 <DataGridTemplateColumn Header="Lap">
